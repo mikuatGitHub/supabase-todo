@@ -1,0 +1,21 @@
+元サイト
+https://note.com/libproc/n/n53c198d347d1
+
+##npx create-next-app -e with-supabaseの意味
+-e は --example の短縮形で、指定したテンプレート（例）を使用してプロジェクトを作成するためのオプションです。
+with-supabase は、Supabase が統合された Next.js プロジェクトのテンプレートを示します。Supabase は、オープンソースの Firebase 代替であり、リアルタイムデータベースや認証機能を提供
+
+##Table作成時に指定するRLS認証機能
+認証機能を使用せず、シンプルなTodoアプリを作成する場合について、RLS（Rust Language Server）の有効化チェックをOFFにする
+「RLSの有効化」とは、Rustプログラミング言語におけるRust Language Server (RLS) を開発環境で使用できるように設定することを指します。RLSは、Rustコードの補完、エラーチェック、コードのナビゲーションなどの機能を提供することで、開発体験を向上させます。
+
+##tsファイルとtsxファイルの違い
+.tsファイル: TypeScriptコード全般に使用され、JSX構文をサポートしない。
+.tsxファイル: TypeScriptとJSXを組み合わせて使用するために使用され、主にReactコンポーネントを書くために使われる。
+
+##型定義ファイルを記述するnpx supabase gen types typescript --project-id "$PROJECT_ID" --schema public > types/supabasetype.ts
+の意味
+--schema public:
+--schema は、型定義を生成するデータベーススキーマを指定するオプションです。ここでは、publicスキーマを指定しています。PostgreSQLデータベースには複数のスキーマが存在する可能性があり、どのスキーマの情報を型定義として生成するかを指定します。
+> types/supabasetype.ts:
+> は、リダイレクト演算子で、コマンドの出力をファイルに保存することを意味します。ここでは、生成された型定義が types/supabasetype.ts というファイルに保存されます。
